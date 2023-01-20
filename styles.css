@@ -1,6 +1,21 @@
 * {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    background-color: #f1f1f1;
+}
+
+:root {
+    --primary-color: rgb(28,28,94);
+    --secondary-color: rgb(245, 160, 0);
+    --bg-color: rgb(241, 241, 241);
+    --text-color: #fff;
+    --stext-color: black;
+    --sbg-color: black;
+}
+
+body {
+    background: linear-gradient(-45deg, orange, rgb(10, 10, 207));
+	background-size: 400% 400%;
+	-webkit-animation: backg 15s ease infinite;
+	        animation: backg 15s ease infinite;
 }
 
 #logo {
@@ -11,9 +26,14 @@
 #logopatos {
     width: 696px;
     height: 522px;
-    border: 5px solid #000;
+    border: 5px solid var(--bg-color);
     border-radius: 42px;
     max-width: 1200px;
+}
+
+#logopatos:hover {
+    transform: scale(1.05);
+    transition: 0.7s;
 }
 
 main {
@@ -24,7 +44,8 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
 
 ul {
@@ -36,23 +57,23 @@ ul {
 a {
     text-decoration: none;
     font-size: 24px;
-    color: #000;
+    color: var(--text-color);
 }
 
 a:hover {
-    color: #f5a000;
+    color: var(--secondary-color);
     transition: 0.3s;
 }
 
 #site {
-    background-color: #f5a000;
+    background-color: var(--secondary-color);
     padding: 5px 5px;
     border-radius: 12px;
-    color: #fff;
+    color: var(--bg-color);
 }
 
 #site:hover {
-    color: #1c1c5e;
+    color: var(--primary-color);
     transition: 0.3s;
 }
 
@@ -67,8 +88,8 @@ main {
 }
 
 h1 {
-    background-color: #1c1c5e;
-    color: #f5a000;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     width: 421px;
     height: 284px;
     border-radius: 40px;
@@ -77,9 +98,15 @@ h1 {
     padding: 20px 20px;
 }
 
+h1:hover {
+    transform: scale(1.05);
+    transition: 0.7s;
+}
+
 p {
     max-width: 391px;
     font-weight: 600;
+    color: var(--text-color);
 }
 
 form{
@@ -88,7 +115,7 @@ form{
 
 #inome {
     border-radius: 12px;
-    background-color: #fff;
+    background-color: var(--bg-color);
     width: 326px;
     height: 40px;
     margin-top: 20px;
@@ -96,7 +123,7 @@ form{
 
 #iemail {
     border-radius: 12px;
-    background-color: #fff;
+    background-color: var(--bg-color);
     width: 326px;
     height: 40px;
     margin-top: 20px;
@@ -104,8 +131,8 @@ form{
 
 #ienviar {
     border-radius: 20px;
-    background-color: #1c1c5e;
-    color: #f5a000;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     width: 203px;
     height: 63px;
     margin-left: 65px;
@@ -116,10 +143,41 @@ form{
 
 #ienviar:hover {
     cursor: pointer;
-    color: #fff;
-    transition: 0.3s;
+    color: var(--bg-color);
+    transition: 0.7s;
+    transform: scale(1.05);
 }
 
 #image {
     margin-top: 130px;
+}
+
+@-webkit-keyframes backg {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes backg {
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+footer {
+    text-align: center;
+    margin: 50px auto;
+    color: var(--text-color);
 }
