@@ -21,6 +21,7 @@ body {
 #logo {
     width: 120px;
     height: 68px;
+    animation: gira 3s infinite;
 }
 
 #logopatos {
@@ -175,6 +176,15 @@ form{
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+@keyframes gira {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 footer {
