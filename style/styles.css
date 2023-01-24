@@ -14,19 +14,13 @@ body {
 
 #logopatos {
     width: 696px;
-    height: 522px;
     border: 5px solid var(--bg-color);
     border-radius: 42px;
-    max-width: 1200px;
 }
 
 #logopatos:hover {
     transform: scale(1.05);
     transition: 0.7s;
-}
-
-main {
-    max-width: 1200px;
 }
 
 header {
@@ -56,7 +50,7 @@ a:hover {
 }
 
 #site {
-    background-color: var(--secondary-color);
+    background-color: var(--sbg-color);
     padding: 5px 5px;
     border-radius: 12px;
     color: var(--bg-color);
@@ -69,23 +63,19 @@ a:hover {
 
 main {
     display: flex;
+    justify-content: center;
     gap: 40px;
-}
-
-#h1 {
-    margin-top: 100px;
-    margin-left: 325px;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 h1 {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    width: 421px;
-    height: 284px;
     border-radius: 40px;
     font-size: 56px;
-    max-width: 421px;
-    padding: 20px 20px;
+    margin-top: 0;
+    padding: 0 20px;
 }
 
 h1:hover {
@@ -136,10 +126,6 @@ form{
     color: var(--bg-color);
     transition: 0.7s;
     transform: scale(1.05);
-}
-
-#image {
-    margin-top: 130px;
 }
 
 @keyframes gira {
