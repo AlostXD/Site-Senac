@@ -2,26 +2,14 @@
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 
-:root {
-    --primary-color: rgb(28,28,94);
-    --secondary-color: rgb(245, 160, 0);
-    --bg-color: rgb(241, 241, 241);
-    --text-color: #fff;
-    --stext-color: black;
-    --sbg-color: black;
-}
-
 body {
-    background: linear-gradient(-45deg, orange, rgb(10, 10, 207));
-	background-size: 400% 400%;
-	-webkit-animation: backg 15s ease infinite;
-	        animation: backg 15s ease infinite;
+    background: var(--sbg-color)
 }
 
 #logo {
     width: 120px;
     height: 68px;
-    animation: gira 3s infinite;
+    animation: gira 3s ease;
 }
 
 #logopatos {
@@ -152,30 +140,6 @@ form{
 
 #image {
     margin-top: 130px;
-}
-
-@-webkit-keyframes backg {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-@keyframes backg {
-    0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
 }
 
 @keyframes gira {
