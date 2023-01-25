@@ -1,3 +1,7 @@
+* {
+    color: var(--text-color);
+}
+
 h1 {
     width: 100%;
     text-align: center;
@@ -11,6 +15,16 @@ h1 {
 
 .cursos-lista {
     width: 100%;
+    flex-wrap: wrap;
+}
+
+.fotos {
+    opacity: 50%;
+}
+
+.cursos-item:hover .fotos {
+    opacity: 100%;
+    transition: 0.6s ease;
 }
 
 .cursos-item {
@@ -22,7 +36,7 @@ h1 {
     overflow: hidden;
 }
 
-#programacao {
+.fotos {
     width: 100%;
 }
 
@@ -77,4 +91,9 @@ span {
     right: -50px;
     bottom: 20px;
     transform: rotate(-28deg);
+}
+
+.saibamais:hover {
+    color: var(--stext-color);
+    transition: 0.6s ease;
 }
