@@ -1,0 +1,36 @@
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.items-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0px;
+}
+
+.main-container{
+    border-bottom: 0.5px solid #fff;
+    padding-bottom: 36px;
+}
+
+main {
+    flex-direction: column;
+}
+
+h3 {
+    color: #fff;
+}
+
+.main-container:nth-child(){
+    border-bottom: 0px solid red;
+}
+
+#senacprint {
+    width: 409px;
+    height: 307px;
+}
+
+.siga-container {
+    padding-bottom: 20px;
+}
