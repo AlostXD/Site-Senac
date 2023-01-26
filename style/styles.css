@@ -142,3 +142,14 @@ footer {
     margin: 50px auto;
     color: var(--text-color);
 }
+
+@media screen and (max-width: 880px){
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    #logopatos{
+        width: 500px;
+    }
+}

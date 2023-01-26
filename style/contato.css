@@ -71,3 +71,12 @@ h3 {
 .editarp {
     color: var(--secondary-color);
 }
+
+@media  screen and (max-width: 880px) {
+    .items-container {
+        max-width: 768px;
+    }
+    main {
+        display: ;
+    }
+}
