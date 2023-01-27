@@ -64,6 +64,10 @@ h3 {
     height: 58px;
 }
 
+#image-apple {
+    height: 45px;
+}
+
 #baixe {
     padding-left: 40px;
 }
@@ -74,9 +78,14 @@ h3 {
 
 @media  screen and (max-width: 880px) {
     .items-container {
-        max-width: 768px;
+        transform: scale(0.8);
     }
-    main {
-        display: ;
+}
+
+@media screen and (max-width: 482px) {
+    .items-container {
+        display: flex;
+        flex-direction: column;
     }
+
 }

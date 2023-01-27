@@ -149,7 +149,31 @@ footer {
         flex-direction: column-reverse;
         align-items: center;
     }
-    #logopatos{
+    #logopatos {
         width: 500px;
+    }
+}
+
+@media screen and (max-width: 482px) {
+    header {
+        transform: scale(.6);
+    }
+    h1 {
+        font-size: 32px;
+    }
+    #logopatos {
+        width: 300px;
+    }
+    footer {
+        text-align: center;
+    }
+    #h1 {
+        transform: scale(.8);
+    }
+    p {
+        text-align: center;
+    }
+    form {
+        margin-left: 35px;
     }
 }

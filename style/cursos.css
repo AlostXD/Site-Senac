@@ -108,3 +108,14 @@ span {
         top: 20px;
     }
 }
+
+@media screen and (max-width: 482px) {
+    .cursos-lista li {
+        margin: 0px;
+    }
+    .cursos-descricao ul {
+        padding: 0px;
+        gap: 12px;
+        transform: scale(.7);
+    }
+}
