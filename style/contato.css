@@ -89,3 +89,9 @@ h3 {
     }
 
 }
+
+footer {
+    text-align: center;
+    margin: 50px auto;
+    color: var(--text-color);
+}

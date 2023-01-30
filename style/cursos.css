@@ -27,6 +27,12 @@ h1 {
     transition: 0.6s ease;
 }
 
+.cursos-item:hover {
+    transform: scale(1.05);
+    transition: 0.6s ease;
+}
+
+
 .cursos-item {
     box-shadow: 3px 3px 3px #3a3939;
 }
@@ -118,4 +124,10 @@ span {
         gap: 12px;
         transform: scale(.7);
     }
+}
+
+footer {
+    text-align: center;
+    margin: 50px auto;
+    color: var(--text-color);
 }
