@@ -13,10 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="header">
         <a href="https://www.mg.senac.br/Paginas/default.aspx" target="_blank" id="imagem"><img src="img/logo-senac.png" alt="logo-senac" id="logo"></a>
         <nav>
-            <ul>
+            <ul id="header-bottons">
                 <li><a href="index.html" id="boton">Início</a></li>
                 <li><a href="cursos.html">Cursos</a></li>
                 <li><a href="contato.html">Contato</a></li>
@@ -26,16 +26,16 @@
     </header>
     <main>
         <h1 id="h1">Nossos Cursos</h1>
-        <ul class="cursos-lista">
+        <ul class="cursos-lista" id="cursos-lista">
             <li class="cursos-item">
                 <img src="img/programacao.jpg" alt="programação" class="fotos">
                 <div class="cursos-descricao">
                     <span></span>
-                    <h2>Programação</h2>
+                    <h2 id="progra">Programação</h2>
                     <p>Curso para todos que tem interrese de ingressar na
                         área de programação.
                     </p>
-                    <ul>
+                    <ul class="ul-topicos" id="topicos">
                         <li class="txt-box">Tecnologia</li>
                         <li class="txt-box">Desing Ux/Ui</li>
                         <li class="txt-box">Desenvolvimento Web</li>
@@ -46,12 +46,12 @@
             <li class="cursos-item">
                 <img src="img/administracao.jpg" alt="administração" class="fotos">
                 <div class="cursos-descricao">
-                    <span></span>
+                    <span id="spanadm"></span>
                     <h2>Administração</h2>
                     <p>Curso para todos que tem interrese de ingressar na
                         área da Administração.
                     </p>
-                    <ul>
+                    <ul class="ul-topicos">
                         <li class="txt-box">Administração</li>
                         <li class="txt-box">Marketing</li>
                         <li class="txt-box">Finanças e Contabilidade</li>
@@ -67,17 +67,17 @@
                     <p>Curso para todos que tem interrese de ingressar na
                         área da saúde.
                     </p>
-                    <ul>
+                    <ul class="ul-topicos">
                         <li class="txt-box">Biosegurança</li>
                         <li class="txt-box">Primeiros Socorros</li>
                         <li class="txt-box">Ministração de Medicamentos</li>
                     </ul>
-                    <a href="#" class="saibamais">Saiba Mais</a>
+                    <a href="#" class="saibamais" id="enfersaiba">Saiba Mais</a>
                 </div>
             </li>
         </ul>
     </main>
-    <footer>
+    <footer id="footer">
         Criado por Vanderlei @ 2023
     </footer>
     <script src="cursos.js"></script>

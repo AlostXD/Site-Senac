@@ -60,7 +60,7 @@ span {
 
 .cursos-lista li:hover span {
     width: 120px;
-    transition: 0.6s ease;
+    transition: 0.6s ease-in-out;
 }
 
 .cursos-descricao {
@@ -102,6 +102,10 @@ span {
 .saibamais:hover {
     color: var(--stext-color);
     transition: 0.6s ease;
+}
+
+.ul-topicos {
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 880px) {

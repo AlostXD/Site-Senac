@@ -23,7 +23,7 @@ body {
     transition: 0.7s;
 }
 
-header {
+.header {
     max-width: 1200px;
     margin: 32px auto;
     display: flex;

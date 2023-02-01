@@ -24,7 +24,25 @@ var enfermagem = {
 
 var cursos = [programadorWeb, administração, enfermagem]
 
-console.log(cursos)
+var topicos = document.getElementById("topicos");
+
+var liTopico = document.createElement("li");
+liTopico.innerText = "Front-End";
+
+topicos.appendChild(liTopico)
+
+liTopico.classList = "txt-box"
+
+
+var headerTopicos = document.getElementById("header-bottons")
+
+var botaoTopico = document.createElement("li")
+botaoTopico.innerHTML = `<li><a href="#">Sobre Nós</a></li>`
+
+headerTopicos.appendChild(botaoTopico)
+
+
+
 
 
 /*
@@ -85,4 +103,30 @@ else if (imc > 40) {
     console.log("Obesidade gráve de grau 3")
 } */
 
+
+/*
 cursos.forEach(curso => console.log(curso.titulo + ": " + curso.topicos.join(", ")))
+*/
+/*
+
+var titulo = document.getElementById("h1");
+
+titulo.style.backgroundColor = "green";
+titulo.style.color = "Black";
+
+var saibamais = document.getElementById("enfersaiba");
+
+saibamais.style.backgroundColor = "green";
+
+var span = document.getElementById("spanadm");
+
+span.style.backgroundColor = "Red";
+
+
+var footer = document.getElementById("footer")
+
+footer.innerHTML = "<h1> FOOTER </h1>"
+
+var cursoP = document.getElementById("progra")
+cursoP.innerHTML = "<h1> PROGRAMAÇÃO </h1>"
+*/
