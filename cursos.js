@@ -27,16 +27,62 @@ var cursos = [programadorWeb, administração, enfermagem]
 console.log(cursos)
 
 
-
+/*
 var aleatorio = {
     nome: "Dodge Challenger",
     ano: 2015,
     modelo: "Hellcat",
     motor: "V8",
-    variantes: "Dodge Charger",
+    variantes: "Dodge Challenger Demon",
     estilo: "Muscle Car",
     utilizadoOnline: ["GTAV/FiveM", "NFS"],
     valor: ["$80,000", "R$280,000"]
 }
 
-console.log(aleatorio)
+console.log(alunos.join(", "))
+
+
+var atividade = "Os Alunos presentes ontem foram:" + alunos.join(", ");
+console.log(atividade)
+
+
+/*
+var idade = prompt()
+
+if (idade >= 18){
+    console.log(idade + "Maior de Idade")
+}
+else {
+    console.log(idade + ": Menor de Idade")
+}
+
+var nota = prompt()
+
+if (nota >= 60) {
+    console.log("Aprovado")
+}
+else {
+    console.log("Reprovado")
+}
+
+var peso = prompt("Coloque seu Peso!");
+var altura = prompt("Coloque sua altura! (1,70m = 170m)");
+var imc = peso / (altura*altura);
+
+if (imc <= 18.5) {
+    console.log("(Magrezaaltura)om grau 0 de Obesidade")
+}
+else if (imc < 24.9) {
+    console.log("Normal")
+}
+else if (imc < 29.9) {
+    console.log("(Sobrepealtura) com grau 1 de Obesidade")
+}
+else if (imc < 39.9) {
+    console.log("(Obesidade de grau 2")
+}
+else if (imc > 40) {
+    console.log("Obesidade gráve de grau 3")
+} */
+
+cursos.forEach(curso => console.log(curso.titulo + ": " + curso.topicos.join(", ")))
