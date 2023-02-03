@@ -53,6 +53,8 @@ cursos.forEach(curso => {
         <a href="#">Saiba Mais</a>
     </div>`
     ulCursos.appendChild(listaitem)
+
+    listaitem.classList = "cursos-item"
 })
 
 console.log (ulCursos)
