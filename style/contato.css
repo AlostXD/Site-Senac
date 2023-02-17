@@ -82,7 +82,7 @@ h3 {
     color: var(--secondary-color);
 }
 
-@media  screen and (max-width: 880px) {
+@media screen and (max-width: 880px) {
     .items-container {
         transform: scale(0.8);
     }
